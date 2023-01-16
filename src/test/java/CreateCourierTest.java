@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class CreateCourierTest {
     private Courier courier;
@@ -42,7 +43,7 @@ public class CreateCourierTest {
         int statusCode = response.extract().statusCode();
         assertEquals(201, statusCode);
         boolean messageResponse = response.extract().path("ok");
-        assertEquals(true, messageResponse);
+        assertTrue(messageResponse);
 
     }
 

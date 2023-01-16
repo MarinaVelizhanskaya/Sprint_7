@@ -12,13 +12,13 @@ public class CourierGenerator {
     public static Courier getRandomWithoutPassword() {
         String login = RandomStringUtils.randomAlphabetic(10);
         String firstName = RandomStringUtils.randomAlphabetic(10);
-        return new Courier(login, firstName);
+        return new Courier(login, null, firstName);
     }
 
     public static Courier getRandomWithoutLogin() {
         String password = RandomStringUtils.randomAlphabetic(10);
         String firstName = RandomStringUtils.randomAlphabetic(10);
-        return new Courier(password, firstName);
+        return new Courier(null, password, firstName);
     }
 }
 

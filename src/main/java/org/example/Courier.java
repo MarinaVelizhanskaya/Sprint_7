@@ -37,10 +37,7 @@ public class Courier {
 
     public Courier() {};
 
-    public Courier(String login, String firstName) {
-        this.login = login;
-        this.firstName = firstName;
-    }
+
 
 
 
