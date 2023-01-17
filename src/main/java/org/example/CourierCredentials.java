@@ -27,10 +27,7 @@ public class CourierCredentials {
 
     public CourierCredentials() {
     }
-    public CourierCredentials(String login) {
-        this.login = login;
 
-    }
 }
 
 

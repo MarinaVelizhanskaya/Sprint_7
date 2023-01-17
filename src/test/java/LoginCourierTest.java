@@ -29,8 +29,8 @@ public class LoginCourierTest {
         nonexistentCourier = CourierCredentialsGenerator.getRandom();
         courierClient = new CourierClient();
         courierCredentials = new CourierCredentials(courier.getLogin(), courier.getPassword());
-        courierCredentialsWithoutPassword = new CourierCredentials(courier.getLogin());
-        courierCredentialsWithoutLogin = new CourierCredentials(courier.getPassword());
+        courierCredentialsWithoutPassword = new CourierCredentials(courier.getLogin(), null);
+        courierCredentialsWithoutLogin = new CourierCredentials(null, courier.getPassword());
     }
 
     @After
